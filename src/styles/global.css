@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  &::selection {
+    background-color: var(--color-orange-500);
+    color: var(--color-white);
+  }
+}

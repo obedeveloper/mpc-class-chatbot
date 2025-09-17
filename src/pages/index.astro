@@ -1,0 +1,27 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main>
+    <Welcome />
+    <div
+      id="mpc-image"
+      class="px-4 bg-[url('/assets/mpc.jpeg')] bg-cover min-h-dvh"
+    >
+    </div>
+  </main>
+</Layout>
+
+<style>
+  div {
+    animation: bg 10s ease-in-out infinite;
+  }
+
+  @keyframes bg {
+    50% {
+      background-position: 100%;
+    }
+  }
+</style>

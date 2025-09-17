@@ -1,19 +1,22 @@
 {
-  "name": "ai",
-  "private": true,
-  "version": "0.0.0",
+  "name": "mpc-class-chatbot",
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^6.3.4"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview --host",
+    "astro": "astro"
   },
   "dependencies": {
-    "github-markdown-css": "^5.8.1",
-    "markdown-it": "^14.1.0",
-    "typewriter-effect": "^2.21.0"
+    "@tailwindcss/vite": "^4.1.13",
+    "astro": "^5.13.7",
+    "showdown": "^2.1.0",
+    "tailwindcss": "^4.1.13",
+    "typewriter-effect": "^2.22.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/showdown": "^2.0.6"
   }
 }

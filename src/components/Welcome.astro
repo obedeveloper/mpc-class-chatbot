@@ -1,0 +1,47 @@
+---
+import ScrollToBottom from './ScrollToBottom.astro';
+const hello =
+  "Hello and welcome! I'm here to share fun and interesting stories about our classmates in the";
+---
+
+<div class="py-4 px-4 md:py-10 grid gap-y-2">
+  <h1 class="text-3xl mb-3 font-bold text-center text-balance">
+    🌟Welcome to the MPC Class Chatbot! 🌟
+  </h1>
+  <p data-hello={hello} class="md:text-lg md:text-center" id="typewriter">
+    {hello}
+    <del class="text-red-500 dark:text-red-300 font-semibold">PCB</del>
+    <ins class="text-green-500 dark:text-green-300 font-semibold">MPC</ins> class.
+  </p>
+
+  <ScrollToBottom />
+</div>
+
+<script>
+  import Typewriter from 'typewriter-effect/dist/core';
+
+  const el = document.getElementById('typewriter');
+
+  const hello = el?.dataset.hello;
+  const pcb = el?.querySelector('del')?.outerHTML;
+  const mpc = el?.querySelector('ins')?.outerHTML;
+
+  (() => {
+    if (!hello || !pcb || !mpc) return;
+
+    const typewriter = new Typewriter(el, {
+      delay: 75,
+      loop: false,
+    });
+
+    typewriter
+      .pauseFor(2500)
+      .typeString(hello + ' ' + pcb)
+      .pauseFor(1000)
+      .deleteChars(3)
+      .pauseFor(1000)
+      .typeString(mpc + ' class.')
+      .pauseFor(1500)
+      .start();
+  })();
+</script>
