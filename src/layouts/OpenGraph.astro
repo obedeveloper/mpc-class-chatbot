@@ -1,0 +1,25 @@
+---
+interface Props {
+  title: string;
+  desc: string;
+}
+
+const { origin, hostname } = Astro.url;
+const { desc, title } = Astro.props;
+const mpcImage = origin + '/assets/mpc.jpeg';
+---
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:url" content={origin} />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={desc} />
+<meta property="og:image" content={mpcImage} />
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain" content={hostname} />
+<meta property="twitter:url" content={origin} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={desc} />
+<meta name="twitter:image" content={mpcImage} />

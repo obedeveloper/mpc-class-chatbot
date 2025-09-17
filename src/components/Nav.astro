@@ -1,0 +1,22 @@
+---
+import { NAV_LINKS } from '../consts';
+---
+
+<header class="px-4 py-3 bg-orange-700">
+  <nav>
+    <ul class="flex justify-between md:justify-normal md:gap-x-5">
+      {
+        NAV_LINKS.map(({ link, text }) => (
+          <li>
+            <a
+              class="text-2xl text-white font-bold hover:underline"
+              href={link}
+            >
+              {text}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
