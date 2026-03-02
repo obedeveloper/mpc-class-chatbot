@@ -5,7 +5,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		prerender: {
-			origin: 'mpc.obedev.site'
+			origin: 'https://mpc.obedev.site'
 		}
 	}
 };
