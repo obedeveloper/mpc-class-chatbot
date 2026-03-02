@@ -1,42 +1,33 @@
-# sv
+# MPC Class Chatbot
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Overview
 
-## Creating a project
+The MPC Class Chatbot is a conversational AI
+assistant designed to provide information about the MPC class,
+including fun stories and anecdotes about the class and its teachers.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Features
 
-```sh
-# create a new project
-npx sv create my-app
-```
+- **Class Stories**: The chatbot can share entertaining stories and anecdotes that have happened in the MPC class, giving users a glimpse into the lively and engaging nature of the class.
+- **Teacher Highlights**: Users can learn about the unique personalities and memorable moments of the MPC class teachers through the chatbot's stories and insights.
 
-To recreate this project with the same configuration:
+## Usage
 
-```sh
-# recreate this project
-pnpm dlx sv@0.12.4 create --template minimal --types ts --add prettier eslint tailwindcss="plugins:typography" sveltekit-adapter="adapter:static" --install pnpm ./
-```
+To interact with the MPC Class Chatbot, simply start a conversation and ask about the class, teachers, or school. The chatbot will respond with engaging stories and relevant information to give you a better understanding of the MPC class experience.
 
-## Developing
+## Example Queries
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Here are some sample queries you can try with the MPC Class Chatbot:
 
-```sh
-npm run dev
+- "Who is Yvan?"
+- "Tell me more about Frank."
+- "Compare Bad boy and teacher Innocent?"
+- "Was Mbogo a body builder?"
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Limitations
 
-## Building
+The MPC Class Chatbot's knowledge is limited to the information and stories provided during its training. While it aims to be entertaining and informative, the chatbot may not have answers to every question or be able to provide detailed information on all topics.
 
-To create a production version of your app:
+## Feedback and Contributions
 
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+If you have any feedback, suggestions, or would like to contribute your own stories and anecdotes to the MPC Class Chatbot, please feel free to reach out to the project maintainers.

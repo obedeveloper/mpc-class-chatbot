@@ -1,2 +1,10 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+html::selection {
+	@apply bg-primary text-white;
+}
+
+@theme {
+	--color-primary: rebeccapurple;
+}
