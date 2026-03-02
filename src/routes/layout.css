@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+html::selection {
+	@apply bg-primary text-white;
+}
+
+body {
+	font-family: 'TikTok Sans Variable', sans-serif;
+}
+
+@theme {
+	--color-primary: rebeccapurple;
+}
