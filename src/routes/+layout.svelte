@@ -6,8 +6,7 @@
 	let { children } = $props();
 	const { origin, hostname } = page.url;
 	const title = 'MPC Class chatbot';
-	const desc = `The MPC Class Chatbot is a conversational AI assistant designed to provide information about the MPC class, 
-								including fun stories and anecdotes about the class and its teachers.`;
+	const desc = `The MPC Class Chatbot is a conversational AI assistant designed to provide information about the MPC class, including fun stories and anecdotes about the class and its teachers.`;
 	const mpcImage = origin + '/mpc.jpeg';
 </script>
 
