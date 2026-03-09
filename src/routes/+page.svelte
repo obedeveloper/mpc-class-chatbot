@@ -1,6 +1,8 @@
 <script lang="ts">
+	/* eslint-disable svelte/no-at-html-tags */
 	import readme from '/README.md?raw';
 	import { marked } from 'marked';
+	import mpcImage from '$lib/assets/mpc.jpeg?enhanced';
 
 	let about = marked.parse(readme);
 	const h1 = '<h1>MPC Class Chatbot</h1>';
@@ -23,6 +25,6 @@
   prose-h1:mt-0 prose-h1:mb-5 prose-h1:text-center prose-h1:text-primary prose-li:my-0"
 >
 	{@html h1}
-	<img src="/mpc.jpeg" alt="Happy students!" class="rounded-md shadow-lg shadow-primary" />
+	<enhanced:img src={mpcImage} alt="Happy students!" class="rounded-md shadow-lg shadow-primary" />
 	{@html about}
 </main>

@@ -2,12 +2,13 @@
 	import '@fontsource-variable/tiktok-sans';
 	import './layout.css';
 	import { page } from '$app/state';
+	import mpc from '$lib/assets/mpc.jpeg';
 
 	let { children } = $props();
 	const { origin, hostname } = page.url;
 	const title = 'MPC Class chatbot';
 	const desc = `The MPC Class Chatbot is a conversational AI assistant designed to provide information about the MPC class, including fun stories and anecdotes about the class and its teachers.`;
-	const mpcImage = origin + '/mpc.jpeg';
+	const mpcImage = origin + mpc;
 </script>
 
 <svelte:head>
